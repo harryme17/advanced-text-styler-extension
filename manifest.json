@@ -5,7 +5,8 @@
   "description": "Easily style any text on the web. Right-click to select from over 45 creative font styles like bold, italic, cursive, and more.",
   "permissions": [
     "contextMenus",
-    "scripting"
+    "scripting",
+    "activeTab"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -31,5 +32,16 @@
       "resources": ["popup.html", "popup.css"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "commands": {
+    "open-style-text-modal": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "windows": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S",
+        "linux": "Ctrl+Shift+S"
+      },
+      "description": "Open Style Text Modal"
+    }
+  }
 }
